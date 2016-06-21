@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "162224154410",
+    "firebase_url": "https://max-coupons.firebaseio.com",
+    "project_id": "max-coupons",
+    "storage_bucket": "max-coupons.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162224154410:android:3fb02f896de58aeb",
+        "android_client_info": {
+          "package_name": "devzstudio.com.maxcoupons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162224154410-qt5cgnb6uivfnqsbr1bm0ojb8pnmcrhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW14R5O7FpxDR7ovNV9RO_dYLviZGpuv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

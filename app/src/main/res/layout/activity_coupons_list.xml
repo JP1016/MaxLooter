@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#000"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    tools:context="devzstudio.com.maxcoupons.CouponsListActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <it.gmariotti.cardslib.library.view.CardView
+                android:id="@+id/couponsListCard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card:card_layout_resourceID="@layout/native_cardwithlist_layout"
+                card:cardCornerRadius="5dp"
+                card:cardElevation="5dp"
+                card:cardPreventCornerOverlap="false"
+                style="@style/card_external"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

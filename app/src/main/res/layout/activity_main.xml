@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="devzstudio.com.maxcoupons.MainActivity">
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/view"
+        android:background="#4b6945"
+        rv:rv_backgroundColor="#655989"
+        rv:rv_isRadiusHalfHeight="true"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="    Categories:"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+    </com.flyco.roundview.RoundRelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    //First Two Cards Cab and Fashion START
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            //Cab START
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/topappcard"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="Cabs"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#329932"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/topappimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:elegantTextHeight="true"
+                        android:layout_gravity="center_horizontal|center"
+
+                        android:paddingTop="5dp"
+                        android:scaleType="center"
+                        android:text="{fa-cab}"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_toRightOf="@id/topappimg"
+                        android:text="Cab"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            //Fashion START
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/device_infocard"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="Fashion"
+                    card_view:cardBackgroundColor="#565dc0"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/infoimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:scaleType="center"
+                        android:text="{fa-black-tie}"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/infoimg"
+                        android:text="Fashion"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    //Second Two Cards Shopping and Coupons START
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        //Shopping START
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customizationcard"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:onClick="Shopping"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="#0078ff"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/customizationimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:elegantTextHeight="true"
+                    android:paddingTop="5dp"
+                    android:scaleType="center"
+                    android:text="{fa-shopping-cart}"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/customizationimg"
+                    android:text="Shopping"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        //Coupons START
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hackscard"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="Coupons"
+            card_view:cardBackgroundColor="#ff6600"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/hacksimg"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="center"
+                    android:text="{fa-ticket}"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/hacksimg"
+                    android:text="Coupons"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    //Second Two Cards Customization and Hacks END
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dealsCard"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:onClick="OpenDeals"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#464667"
+        card_view:cardCornerRadius="9dp"
+        card_view:cardElevation="9dp">
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dealsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:elegantTextHeight="true"
+                android:paddingTop="5dp"
+                android:scaleType="center"
+                android:text="{fa-ticket}"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/dealsText"
+                android:text="Quick Deals"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/view1"
+        android:background="#4b6945"
+        rv:rv_backgroundColor="#cc0000"
+        rv:rv_isRadiusHalfHeight="true"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="    Tricks/Offers:"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+    </com.flyco.roundview.RoundRelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/adView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal|center"
+                ads:adSize="320x150"
+                ads:adUnitId="@string/ad_unit_id">
+            </com.google.android.gms.ads.NativeExpressAdView>
+
+            <it.gmariotti.cardslib.library.view.CardView
+                android:id="@+id/homeCard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card:card_layout_resourceID="@layout/native_cardwithlist_layout"
+                card:cardCornerRadius="3dp"
+                card:cardElevation="3dp"
+                card:cardPreventCornerOverlap="false"
+                style="@style/card_external"
+                />
+
+
+
+        </LinearLayout>
+
+
+    <com.dd.processbutton.FlatButton
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More..."
+        android:id="@+id/viewButton"
+        android:textColor="@android:color/white"
+        android:layout_gravity="right"
+        custom:pb_colorNormal="@android:color/holo_green_dark"
+        custom:pb_colorPressed="@android:color/holo_green_light"
+        android:layout_alignTop="@+id/siteText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
